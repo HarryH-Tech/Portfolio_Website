@@ -1,0 +1,14 @@
+input[type=text], textarea {
+	background-color: white !important;
+	width: 90% !important;
+	padding: 4px;
+	text-align: center;
+	font-size: 18px !important;
+}
+
+textarea {
+	height: 40%;
+	
+}
+
+

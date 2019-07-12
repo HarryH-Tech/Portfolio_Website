@@ -1,0 +1,17 @@
+#title {
+	margin: auto !important;
+	text-align: center !important;
+	font-size: 35px !important;
+}
+
+
+#description {
+	height: 25%;
+}
+
+input[type=text], textarea {
+	background-color: white !important;
+	width: 85% !important;
+	padding: 4px !important;
+}
+

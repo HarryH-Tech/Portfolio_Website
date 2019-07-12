@@ -1,0 +1,299 @@
+html {
+  scroll-behavior: smooth;
+ }
+ 
+#header {
+	background-color: #F7FcFd;
+  position: relative;
+  height: 660px;
+	
+}
+
+#particles-js {
+	height: 100%;
+	z-index: 10;
+}
+
+#first_hr {
+	margin: 0px;
+}
+
+#header_content {
+	color: black;
+	  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+ }
+
+
+
+
+.header_img {
+	height: 9%;
+    width: 6%;
+	margin: 12px 5px;
+}
+
+
+
+.goto_button {
+		margin: 12px 8px;
+
+		border-radius: 4px;
+		border-color: #44F8FF;
+	color: white;
+	background-color: #11AADD;
+	width: 30%;
+	    
+
+}
+
+.goto_button:hover{
+	box-shadow: 5px;
+	background-color: #1166AA
+	
+}
+
+
+
+
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 28px; /*change with size of arrow to make sit on bottom */
+/*   background-image: url(); */
+/*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+
+/*Back to top button */
+#top_button_container {
+	text-align: center;
+}
+
+#return_to_top {
+	margin-bottom: 10px;
+	border: 2px solid blue;
+	border-radius: 16px;
+	background-color: #44A8FF;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#return_to_top:hover {
+	background-color: blue;
+}
+
+
+/* About Me Section */
+
+.card {
+	margin: 40px;
+	text-align: center;
+		border-radius: 16px;
+
+}
+
+
+
+.card-body {
+	text-align: justify;
+	text-align-last: center;
+	border-radius: 16px;
+	background-color: #F2F4FF;
+}
+
+.skills_icons li {
+	    display: inline; /* changed */ 
+    list-style-type: none;
+}
+
+.skills_icon {
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+}
+
+.skills_icon { transition: all .2s ease-in-out; }
+.skills_icon:hover { transform: scale(1.1); }
+
+/*Projects*/
+
+#my_projects_title {
+	text-align: center;
+}
+
+#project_intro_text {
+	text-align: center;
+	
+}
+
+.flex-container {
+	display: flex;
+    justify-content: center;
+}
+
+.project_option_type {
+	margin: 10px;
+	width: 17%;
+	text-align: center;
+	cursor: pointer;
+	background: white;
+	font-weight: bold;
+	transition: all .7s ease-out;
+	-moz-transition: all .7s ease-in;
+    -o-transition: all .7s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+.selected_projects_button {
+	-moz-transition: all .7s ease-in;
+    -o-transition: all .7s ease-in;
+    -webkit-transition: all .7s ease-in;
+    transition: all 0.7s ease-in;
+    background: #8EFFF7; 
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#repo_live_site_options {
+	margin: 8px auto 4px auto;
+}
+
+.repo {
+	margin: 2px 50px auto auto;
+}
+
+.project_text {
+	width: 85%;
+	margin: auto;
+	text-align: justify;
+	text-align-last: center;
+	
+}
+
+
+
+
+#contact {
+	text-align: center;
+}
+
+.contact_input {
+	border-radius: 18px;
+	margin: 5px;
+	background-color: #CCCCFF;
+	height: 90%;
+	width: 90%;
+	padding: 10px;
+}
+
+textarea {
+	height: 150px !important;
+	width: 90% !important;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+
+/* Animations */
+@keyframes blinker {
+	50% {
+		opacity: 0; 
+	} 
+}
+		
+.blink {
+	animation: blinker 1.4s linear infinite;
+	font-size: 130%; 
+	font-weight: strong;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+	.skills_icon {
+		height: 45px;
+	}
+}
+
+
+@media only screen and (max-width: 2500px) {
+	.skills_icon {
+		height: 80px;
+		width: 80px;
+	}
+}
+
+
