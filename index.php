@@ -12,6 +12,9 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Portfolio</title>
@@ -20,29 +23,60 @@
 	</style>
 </head>
 <body data-spy="scroll">
+
 <section id="header">
 	<div id="particles-js">
+
+<nav class="navbar navbar-expand-md navbar-light bg-primary">
+  <button class="navbar-toggler navbar-inverse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+		<li class="navbar_li">
+			<a class="nav-link" href="#about_me">About Me </a>
+		</li>
+		<li class="navbar_li">
+			<a class="nav-link" href="#my_projects">Projects</a>
+		</li> 
+		<li class="navbar_li">
+			<a class="nav-link" href="#contact">Get In Touch</a>
+		</li>
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+  
+<br>
+<br>
+
 		<div id="header_content">
 			<h1 class="display-4">Harry Harrison</h1>
 			<h2 class="display-5">Web Developer<span class="blink">_</span></h2>
-			<div class="icons">
-				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/linkedin.jpg' alt="LinkedIn Icon"></a>
+		
+		
+		<div class="icons">
+		
+					
+					<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/linkedin.jpg' alt="LinkedIn Icon"></a>
+				
 				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/github.png' alt="Github Icon"></a>
 				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/cv.jpg' alt="CV Icon"></a>
 				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/twitter.png' alt="Twitter Icon"></a>
-			</div>
-			<div class="goto_buttons">
-				<button class="goto_button" onClick="document.getElementById('about_me').scrollIntoView();"> About Me </button>
-				<button class="goto_button" onClick="document.getElementById('my_projects').scrollIntoView();"> Projects </button>
-				<button class="goto_button" onClick="document.getElementById('contact').scrollIntoView();"> Contact </button>
-			</div>
+			</div>	
+			
+
 		</div>
 		<div class="arrow bounce"><span style="color: black">&#x25BC;</span></div>
 		</div>
-		<hr id="first_hr">
 	
 	</div>
 </section>
+		<hr id="first_hr">
 
 	<!-- About Me -->
 	<section id="about_me">
@@ -68,13 +102,13 @@
 					<img data-html="true" title="<b>Javascript</b>" data-toggle="tooltip"  class="skills_icon" src="styles/images/skills_icons/js.png" alt="Javascript icon"/>
 				</li>
 				<li>
-					<a class="thumbnail" href="#"><img data-html="true" title="<b>SASS</b>" data-toggle="tooltip" class="" src="styles/images/skills_icons/sass.png" alt="SASS icon"/></a>
+					<img data-html="true" title="<b>SASS</b>" data-toggle="tooltip" class="img-fluid" style="max-width: 100%; height: auto;" src="styles/images/skills_icons/sass.png" alt="SASS icon"/>
 				</li>
 				<li>
-					<img data-html="true" title="<b>Bootstrap</b>" data-toggle="tooltip" class="skills_icon" src="styles/images/skills_icons/bootstrap.png" alt="Bootstrap icon"/>
+					<img data-html="true" title="<b>Bootstrap</b>" data-toggle="tooltip"  src="styles/images/skills_icons/bootstrap.png" alt="Bootstrap icon"/>
 				</li>
 				<li>
-					<img data-html="true" title="<b>Materializecss</b>" data-toggle="tooltip" class="skills_icon" src="styles/images/skills_icons/materialize.png" alt="Materializecss icon"/>
+					<img data-html="true" title="<b>Materializecss</b>" data-toggle="tooltip" class="img-fluid" style="max-width: 100%; height: auto;" src="styles/images/skills_icons/materialize.png" alt="Materializecss icon"/>
 				</li>
 				<li>
 					<img data-html="true" title="<b>Vue.js</b>" data-toggle="tooltip" class="skills_icon" src="styles/images/skills_icons/vue.png" alt="Vue icon"/>
@@ -94,6 +128,8 @@
 			</ul>
 		</div>
 	</section>
+	
+	
 	
 	<!-- Projects -->
 	<hr>
@@ -309,16 +345,21 @@
 	</div>
 	<br>
 	<!-- Footer -->
-	<footer class="page-footer font-small blue darken-1">
-
-  <!-- Footer Elements -->
-  <div class="container">
-  <div class="footer-copyright  py-4">
+<footer class="footer">
+  <div class="container text-center">
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
   </div>
-  </div>
-
 </footer>
 <!-- Footer -->
+
+  <!-- Footer Elements -->
+  
+
+	
+	
+	
 
 
 	
@@ -328,3 +369,5 @@
 
 </body>
 </html>
+
+	

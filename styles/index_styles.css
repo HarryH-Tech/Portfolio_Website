@@ -2,16 +2,45 @@ html {
   scroll-behavior: smooth;
  }
  
+
+ /*Navbar*/
+.nav-link {
+	color: white !important;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px 25px 0px 25px;
+}
+
+.nav-link:hover {
+	color: #ADD8E6 !important;
+	text-decoration: underline;
+}
+
+
+.navbar-nav {
+    margin: auto;
+	text-align: center;
+}
+
+.navbar_li {
+        display:inline-block;
+        *display:inline; /*IE7*/
+        *zoom:1; /*IE7*/
+        margin-right:10px;
+		
+}
+ 
+ 
 #header {
 	background-color: #F7FcFd;
   position: relative;
-  height: 660px;
+  height: 700px;
 	
 }
 
 #particles-js {
-	height: 100%;
-	z-index: 10;
+	height: 80%;
 }
 
 #first_hr {
@@ -37,39 +66,13 @@ html {
 	margin: 12px 5px;
 }
 
-
-
-.goto_button {
-		margin: 12px 8px;
-
-		border-radius: 4px;
-		border-color: #44F8FF;
-	color: white;
-	background-color: #11AADD;
-	width: 30%;
-	    
-
-}
-
-.goto_button:hover{
-	box-shadow: 5px;
-	background-color: #1166AA
-	
-}
-
-
-
-
-
 .arrow {
   position: absolute;
   bottom: 0;
   left: 50%;
   margin-left: -20px;
   width: 40px;
-  height: 28px; /*change with size of arrow to make sit on bottom */
-/*   background-image: url(); */
-/*   background-size: contain; */
+  height: 28px;
 }
 
 .bounce {
@@ -101,13 +104,25 @@ html {
 
 
 /* About Me Section */
-
+#about_me, #my_projects, #contact_me {
+	margin: auto;
+}
+	
+	
 .card {
 	margin: 40px;
 	text-align: center;
-		border-radius: 16px;
+	border-radius: 16px;
 
 }
+
+
+.skills_image {
+	height: 60px;
+	width: 60px;
+	margin: 5px 5px 5px 5px;
+}
+
 
 
 
@@ -124,8 +139,8 @@ html {
 }
 
 .skills_icon {
-	width: 25px;
-	height: 25px;
+	width: 4%;
+	height: 5%;
 	margin: 5px;
 }
 
@@ -155,6 +170,7 @@ html {
 	cursor: pointer;
 	background: white;
 	font-weight: bold;
+	font-size: 35px;
 	transition: all .7s ease-out;
 	-moz-transition: all .7s ease-in;
     -o-transition: all .7s ease-in;
@@ -219,6 +235,23 @@ button:focus {
 
 
 
+footer {
+  background: 	#5bc0de;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+}
+
+footer a:hover {
+  color: black;;
+}
+
+
 /* Animations */
 @keyframes blinker {
 	50% {
@@ -281,13 +314,29 @@ button:focus {
   }
 }
 
-/* Media Queries */
+/* Media Queries 
+CHECK IF STILL NEEDED 
+*/
+@media only screen and (max-width: 425px) {
+	.header_img {
+		width: 10%;
+		height: 10%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.skills_icon {
+		width: 10px;
+		height: 10px;
+	}
+}
+
+
 @media only screen and (max-width: 768px) {
 	.skills_icon {
 		height: 45px;
 	}
 }
-
 
 @media only screen and (max-width: 2500px) {
 	.skills_icon {
