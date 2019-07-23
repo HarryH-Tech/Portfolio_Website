@@ -43,7 +43,7 @@
 			}
 			$get_http_response_code = get_http_response_code($url);
 			
-			/* If server response is ok and city was valid */
+			// If server response is ok and city was valid
 			if ($get_http_response_code == 200 && !empty($_POST['city_query'])) {		
 
 				//curl init and API request 
@@ -68,13 +68,13 @@
 				$cityname = $data->name; 
 				
 				//Check which image to show according to the max temperature
-				if($temp_max < 10) {
+				if($temp_max <= 10) {
 					$image = "ice";
-				} else if($temp_max < 17 && $temp_max > 10) {
+				} else if($temp_max <= 17 && $temp_max > 10) {
 					$image = "mild";
-				} else if($temp_max < 25 && $temp_max > 17) {
+				} else if($temp_max <= 25 && $temp_max > 17) {
 					$image = "warm";
-				} else if($temp_max < 33 && $temp_max > 25) {
+				} else if($temp_max <= 33 && $temp_max > 25) {
 					$image = "hot";
 				} else {
 					$image = "very_hot";

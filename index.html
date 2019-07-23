@@ -55,10 +55,7 @@
 		
 		
 		<div class="icons">
-		
-					
-					<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/linkedin.jpg' alt="LinkedIn Icon"></a>
-				
+				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/linkedin.jpg' alt="LinkedIn Icon"></a>
 				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/github.png' alt="Github Icon"></a>
 				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/cv.jpg' alt="CV Icon"></a>
 				<a href='#' target='blank'><img class='header_img' src='styles/images/intro_links/twitter.png' alt="Twitter Icon"></a>
@@ -118,7 +115,7 @@
 		PROJECTS
 	</h3>
 	<p id="project_intro_text">
-		Here you can see 6 of my side projects.</br>To see more please click <a href="#" target="_blank">here</a>.
+		Here you can see 8 of my side projects.</br>
 	</p>
 	<section  id="projects">
 		<div class="flex-container">
@@ -301,6 +298,72 @@
 							</div>
 						</div>
 						
+						<div class="col-md-6">
+							<div class="backend_projects">
+									<div class="card project_card hoverable">
+										<div >
+											<img class="card-img-top" src="styles/images/project_screenshots/gallery.png" alt="Travelling Photos gallery project screenshot"/>					
+										</div>
+										<div id="repo_live_site_options">
+											<strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
+											<strong><a href="projects/Gallery/index.php" target="_blank">LIVE SITE</a></strong>
+										</div>
+										<div class="card-title">
+										<h3>
+											Travelling Photo Gallery
+										</h3>
+									</div>
+									<div class="card-text">
+										<p class="project_text">
+											This website uses PHP and MySQL to 
+										</p>
+									</div>
+									<hr>
+									<div class="project_tech_icons_holder">
+										<img class="skills_icon" src="styles/images/skills_icons/html.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/css.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/js.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/materialize.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/php.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/mysql.png" alt=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="backend_projects">
+									<div class="card project_card hoverable">
+										<div >
+											<img class="card-img-top" src="styles/images/project_screenshots/weather_app.png" alt="Travelling Photos gallery project screenshot"/>					
+										</div>
+										<div id="repo_live_site_options">
+											<strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
+											<strong><a href="projects/Weather_App/index.php" target="_blank">LIVE SITE</a></strong>
+										</div>
+										<div class="card-title">
+										<h3>
+											Weather App
+										</h3>
+									</div>
+									<div class="card-text">
+										<p class="project_text">
+											This website uses PHP and MySQL to 
+										</p>
+									</div>
+									<hr>
+									<div class="project_tech_icons_holder">
+										<img class="skills_icon" src="styles/images/skills_icons/html.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/css.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/js.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/materialize.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/php.png" alt=""/>
+										<img class="skills_icon" src="styles/images/skills_icons/mysql.png" alt=""/>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 		</div>	
 	</section>
 			
@@ -309,6 +372,17 @@
 	<section id="contact">
 		<div class="container">
 			<h3>GET IN TOUCH</h3>
+			<p>If you want ot get in touch, you can email me <a href="mailto:h.harrison1993&#64;gmail.com">here</a> or contact me using the form below.<br>
+			Have a great day! &#128513; </p>
+		
+			<?php
+				$to = "h.harrison1993@gmail.com";
+				$from = $_POST['email'];
+				$subject = $_POST['subject'];
+				$message = $_POST['message'];
+				$message = $_POST['message'];
+			?>
+			
 			<form>
 				<input class="contact_input" type="text" name="name" placeholder="Name"><br>
 				<input class="contact_input" type="email" name="email" placeholder="Email"><br>
@@ -316,6 +390,7 @@
 				<textarea class="contact_input" name="subject" placeholder="Your Message"></textarea><br>
 				<input type="submit" value="Send" id="send">
 			</form>
+
 		</div>
 	</section>
 	<br>
@@ -324,6 +399,8 @@
 		<a class="btn btn-primary" href="#header"> Return To Top </a>
 	</div>
 	<br>
+	
+	
 	<!-- Footer -->
 <footer class="footer">
   <div class="container text-center">
@@ -332,9 +409,7 @@
     <a href="#"><i class="fa fa-github"></i></a>
   </div>
 </footer>
-<!-- Footer -->
 
-  <!-- Footer Elements -->
   
 
 	
