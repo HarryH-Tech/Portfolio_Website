@@ -62,8 +62,8 @@
 		echo "<div class='card-action'>";
 		echo "<a href={$link} target='_blank'>{$link}</a>";
 		echo "</div>";
-		echo "<a href='edit/edit.php?id=${id}' class='waves-effect waves-light btn'>Edit</a>";
-		echo "<a href='#' onclick='delete_article({$id})' class='waves-effect waves-light btn'>Delete</a>";
+		//echo "<a href='edit/edit.php?id=${id}' class='waves-effect waves-light btn'>Edit</a>";
+		//echo "<a href='#' onclick='delete_article({$id})' class='waves-effect waves-light btn'>Delete</a>";
 		echo "</div>";
 		echo "</div>";
 		echo "</div>";

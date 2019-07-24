@@ -66,12 +66,12 @@
         </div>
       </li>
       <li>
-        <img src="images/gizmodo.png"> 
+        <img src="images/wbw.png"> 
         <div class="caption left-align">
         </div>
       </li>
       <li>
-        <img src="images/readwrite.png"> 
+        <img src="images/medium.png"> 
         <div class="caption right-align">
         </div>
       </li>
@@ -100,9 +100,9 @@
 			<div class="row">
 				
 				<div class="col s12 m6">
-					<div class="card-panel">
+					<div class="card-panel hoverable">
 						<i class="material-icons large light-blue-text">store</i>
-						<a href="store/registration//store_login.php">
+						<a href="store/login/store_login.php">
 							<h4 id="link"> Blogga Merchandise</h4>
 						</a>
 						<p> 
@@ -112,12 +112,12 @@
 					</div>
 				</div>
 				<div class="col s12 m6">
-					<div class="card-panel">
+					<div class="card-panel hoverable">
 						<i class="material-icons large light-blue-text">favorite</i>
 						<a href="favorites/favorite_articles.php">
 							<h4 id="link">Favourite Articles</h4>
 						</a>
-						<p> Lorum ipsum sum </p>
+						<p> Some of our favourtie articles from blogs around the internet. </p>
 					</div>
 				</div>
 			</div>
@@ -132,35 +132,52 @@
 					Popular Blogs
 				</h4>
 				<div class="col s12 m4">
-					<div class="card">
+					<div class="card hoverable">
 						<div class="card-image">
 							<img src="images/techcrunch.png"/>
 						</div>
 						<div class="card-content">
-							Lorum pisum sum sdfgf dsdf gfrdes dfghg fdsdfgbh
-							dfg rtgyh gtrt ghgtr tgyhj gtrt ghjg trtgyhj.
+							TechCrunch is an American online publisher
+							focusing on the tech industry. The company 
+							specifically reports on the business related
+							to tech, technology news, analysis of 
+							emerging trends in tech, and profiling of 
+							new tech businesses and products.
 						</div>
 					</div>
 				</div>
 				<div class="col s12 m4">
-					<div class="card">
+					<div class="card hoverable">
 						<div class="card-image">
-							<img src="images/gizmodo.png"/>
+							<img src="images/medium.png"/>
 						</div>
 						<div class="card-content">
-							Lorum pisum sum sdfgf dsdf gfrdes dfghg fdsdfgbh
-							dfg rtgyh gtrt ghgtr tgyhj gtrt ghjg trtgyhj.
+							Medium is an online publishing platform 
+							developed by Evan Williams and launched in 
+							August 2012. It is owned by A Medium 
+							Corporation. The platform is an example of 
+							social journalism, having a hybrid collection
+							of amateur and professional people and 
+							publications, or exclusive blogs or 
+							publishers on Medium, and is regularly 
+							regarded as a blog host.
 						</div>
 					</div>
 				</div>
 				<div class="col s12 m4">
-					<div class="card">
+					<div class="card hoverable">
 						<div class="card-image">
-							<img src="images/readwrite.png"/>
+							<img src="images/wbw.png"/>
 						</div>
 						<div class="card-content">
-							Lorum pisum sum sdfgf dsdf gfrdes dfghg fdsdfgbh
-							dfg rtgyh gtrt ghgtr tgyhj gtrt ghjg trtgyhj.
+							Wait But Why (WBW) is a website founded by 
+							Tim Urban and Andrew Finn and written and 
+							illustrated by Urban. The site covers a range
+							of subjects as a long-form blog. Typical 
+							posts involve long-form discussions of 
+							various topics, including artificial intelligence, 
+							outer space, and procrastination, using a 
+							combination of prose and rough illustrations.
 						</div>
 					</div>
 				</div>
@@ -168,64 +185,45 @@
 		</div>
 	</section>
 	
-	<!-- Social Media Section -->
-	<section class="section section-follow light-blue darken-2 white-text center">
-		<div class="container">
-			<div class="row">
-				<div class="col s12">
-					<h4>Follow Blogga</h4>
-					<h6> Follow us on Social Media!</h6>
-					<a href="#" class="white-text">
-						<i class="fab fa-facebook fa-4x"></i>
-					</a>
-					<a href="#" class="white-text">
-						<i class="fab fa-twitter fa-4x"></i>
-					</a>
-					<a href="#" class="white-text">
-						<i class="fab fa-linkedin fa-4x"></i>
-					</a>
-					<a href="#" class="white-text">
-						<i class="fab fa-google-plus fa-4x"></i>
-					</a>
-				</div>
-			</div>
-		</div>		
-	</section>
-	
+
 	<!-- Contact Section -->
 	<section id="contact" class="section section-contact scrollspy">
 		<div class="container">
 			<div class="row">
-				<div class="col s12 m6">
+				<div class="col s12 m12">
 					<div class="card-panel light-blue white-text center">
 						<i class="material-icons">email</i>
 						<h5>Contact Us</h5>
 					</div>
-					<ul class="collection with-header">
-						<li class="collection-header">
-							<h4> Location </h4>
-						</li>
-						<li class="collection-item">
-							Blogga Agency
-						</li>
-						<li class="collection-item">
-							123, Blogga Street, Blogville, Blog City.
-						</li>
-					</ul>
-				</div>
-				<div class="col s12 m6">
-					<div class="card-panel grey lighten-3">
-						<h5> Please fill out this form</h5>
-							<div class="input-field">
-								<input type="text" placeholder="Name">
-							</div>
-							<div class="input-field">
-								<input type="text" placeholder="Email">
-							</div>
-							<div class="input-field">
-								<textarea class="materialize-textarea" placeholder="Message"></textarea>
-							</div>
-							<input type="submit" value="Submit" class="btn">
+					<div class='col s6 m6'>
+						<ul class="collection with-header">
+							
+								<li class="collection-header">	
+									<h4> Address </h4>
+								</li>
+								<li class="collection-item">
+									Blogga Agency
+								</li>
+								<li class="collection-item">
+									123, Blogga Street, Blogville, Blog City.
+								</li>
+						</ul>
+					</div>
+				
+					<div class="col s6 m6">
+						<div class="card-panel grey lighten-3">
+							<h5> Please fill out this form</h5>
+								<div class="input-field">
+									<input type="text" placeholder="Name">
+								</div>
+								<div class="input-field">
+									<input type="text" placeholder="Email">
+								</div>
+								<div class="input-field">
+									<textarea class="materialize-textarea" placeholder="Message"></textarea>
+								</div>
+								<input type="submit" value="Submit" class="btn">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -250,7 +248,7 @@
 		const slider = document.querySelector('.slider'); 
 		M.Slider.init(slider, {
 			indicators: false,
-			height: 500,
+			height: 800,
 			transition: 500,
 			interval: 5000
 		});
@@ -261,8 +259,9 @@
 			data: {
 				"Techcrunch": null,
 				"Readwrite": null,
-				"Endgadet": null
-				//ADD MORE LATER!!!
+				"Endgadet": null,
+				"Waitbutwhy": null,
+				"Medium": null
 			},
 		
 			onAutocomplete: function(val) {
@@ -275,6 +274,12 @@
 					link.location;
 				} else if (text == "Endgadget") {
 					let link = window.open("https://endgadget.com/", "_blank");
+					link.location;
+				} else if (text == "waitbutwhy") {
+					let link = window.open("https://waitbutwhy.com/", "_blank");
+					link.location;
+				} else if (text == "medium") {
+					let link = window.open("https://medium.com/", "_blank");
 					link.location;
 				}
 			}

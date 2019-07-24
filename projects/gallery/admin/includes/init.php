@@ -19,6 +19,4 @@ require_once ("paginate.php");
 require_once ("comment.php");
 
 
-// C:\MAMP\htdocs\Photo_Gallery
-
 ?>
