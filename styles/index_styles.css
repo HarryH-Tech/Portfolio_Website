@@ -123,6 +123,10 @@ html {
 	margin: 5px 5px 5px 5px;
 }
 
+.about-me-intro {
+	font-weight: bold;
+	font-size: 18px;
+}
 
 
 
@@ -149,12 +153,18 @@ html {
 
 /*Projects*/
 
+hr {
+	display: inline-block;
+}
+
 #my_projects_title {
 	text-align: center;
 }
 
 #project_intro_text {
 	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
 	
 }
 
@@ -170,7 +180,7 @@ html {
 	cursor: pointer;
 	background: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 17px;
 	transition: all .7s ease-out;
 	-moz-transition: all .7s ease-in;
     -o-transition: all .7s ease-in;
@@ -200,11 +210,12 @@ html {
 	margin: auto;
 	text-align: justify;
 	text-align-last: center;
+	font-size: 18px;
 	
 }
 
 
-
+/***** Contact Section *****/
 
 #contact {
 	text-align: center;
@@ -251,8 +262,12 @@ footer a:hover {
   color: black;;
 }
 
+#contact_text {
+	font-weight: bold;
+}
 
-/* Animations */
+
+/***** Animations *****/
 @keyframes blinker {
 	50% {
 		opacity: 0; 
@@ -324,6 +339,15 @@ CHECK IF STILL NEEDED
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.project_option_type {
+		font-size : 13px;
+	}
+}
+
+
+
+
 @media only screen and (max-width: 425px) {
 	.skills_icon {
 		width: 10px;
@@ -344,5 +368,4 @@ CHECK IF STILL NEEDED
 		width: 80px;
 	}
 }
-
 

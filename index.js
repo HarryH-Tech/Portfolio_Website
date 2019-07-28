@@ -11,13 +11,13 @@ function selectActiveButtonAndShowCards(id) {
 	let backend_projects = document.querySelectorAll('.backend_projects');
 	let frontend_projects = document.querySelectorAll('.frontend_projects')
 	if(id === "all") {
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < 4; i++) {
 			frontend_projects[i].style.display = "block";
 			backend_projects[i].style.display = "block";
 		}
 	}
 	else if(id === "frontend") {
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < 4; i++) {
 			frontend_projects[i].style.display = "block";
 			backend_projects[i].style.display = "none";
 		}
@@ -25,7 +25,7 @@ function selectActiveButtonAndShowCards(id) {
 	}
 	
 	else if(id === "backend") {
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < 4; i++) {
 			frontend_projects[i].style.display = "none";
 			backend_projects[i].style.display = "block";
 		}
@@ -38,30 +38,26 @@ function selectActiveButtonAndShowCards(id) {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-
 $('.skills_icon').tooltip()
-
-
-
 
 //Particle effects
  particlesJS("particles-js",{
   "particles": {
     "number": {
-      "value": 80,
+      "value": 60,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#1acfc4"
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 1,
+        "color": "#1acfc4"
       },
       "polygon": {
         "nb_sides": 5
@@ -86,8 +82,8 @@ $('.skills_icon').tooltip()
       "value": 3,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 4,
+        "enable": false,
+        "speed": 40,
         "size_min": 0.1,
         "sync": false
       }
@@ -95,13 +91,13 @@ $('.skills_icon').tooltip()
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#09fff0",
+      "color": "#1acfc4",
       "opacity": 0.4,
-      "width": 4
+      "width": 3
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -118,11 +114,11 @@ $('.skills_icon').tooltip()
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -153,5 +149,7 @@ $('.skills_icon').tooltip()
       }
     }
   },
-  "retina_detect": false
+  "retina_detect": true
 });
+
+

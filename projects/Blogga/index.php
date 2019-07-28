@@ -70,11 +70,13 @@
         <div class="caption left-align">
         </div>
       </li>
+	  <!--
       <li>
         <img src="images/medium.png"> 
         <div class="caption right-align">
         </div>
       </li>
+	  -->
     </ul>
 	</section>
 	
