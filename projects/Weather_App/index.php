@@ -36,7 +36,7 @@
 			that a vlid city was entered in the search bar */
 			$city_query = $_POST['city_query'];
 			$API_Key = 'd257adb8fd88f23011c53b14bddfda58';
-			$url="http://api.openweathermap.org/data/2.5/weather?q=".$city_query."&&lang=en&units=metric&appid=".$API_Key;
+			$url="http://api.openweathermap.org/data/2.5/weather?q=".$city_query."&&lang=en&units=metric&cnt=7&appid=".$API_Key;
 			function get_http_response_code($url) {
 				$headers = get_headers($url);
 				return substr($headers[0], 9, 3);
@@ -66,7 +66,7 @@
 				$humidity=$data->main->humidity;
 				$today = date("F j, Y, g:i a");
 				$cityname = $data->name; 
-				
+		
 				//Check which image to show according to the max temperature
 				if($temp_max <= 10) {
 					$image = "ice";

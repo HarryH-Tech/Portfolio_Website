@@ -1,0 +1,1 @@
+{"version":3,"sources":["MovieItemStyles.css"],"names":[],"mappings":"AAAA,+BACC,oBACD,CAEA,KACC,kBACD","file":"main.676265a0.chunk.css","sourcesContent":[".card:nth-last-child(1):nth-child(even) {\r\n\tgrid-column: 2 / span 1;\r\n}\r\n\r\n.btn {\r\n\tmargin-bottom: 15px\r\n}\r\n"]}

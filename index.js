@@ -1,31 +1,31 @@
-/* Change my projects button background color and load backend/frontend
+/* Change my projects button background color and show backend/frontend
 projects */
-document.querySelector('.all').classList.add("selected_projects_button");
+document.querySelector('.all').classList.add("selected-projects-button");
 function selectActiveButtonAndShowCards(id) {
 	let button_choice = document.getElementById(id);
-	document.querySelector('.all').classList.remove("selected_projects_button");
-	document.querySelector('.backend').classList.remove("selected_projects_button");
-	document.querySelector('.frontend').classList.remove("selected_projects_button");
-	button_choice.classList.add("selected_projects_button");
+	document.querySelector('.all').classList.remove("selected-projects-button");
+	document.querySelector('.backend').classList.remove("selected-projects-button");
+	document.querySelector('.frontend').classList.remove("selected-projects-button");
+	button_choice.classList.add("selected-projects-button");
 
 	let backend_projects = document.querySelectorAll('.backend_projects');
-	let frontend_projects = document.querySelectorAll('.frontend_projects')
+	let frontend_projects = document.querySelectorAll('.frontend_projects');
 	if(id === "all") {
-		for (let i = 0; i < 4; i++) {
+		for (var i=0; i < 6; i++) {
 			frontend_projects[i].style.display = "block";
 			backend_projects[i].style.display = "block";
 		}
 	}
 	else if(id === "frontend") {
-		for (let i = 0; i < 4; i++) {
+		for (var i=0; i <= 6; i++) {
 			frontend_projects[i].style.display = "block";
+			console.log(i);
 			backend_projects[i].style.display = "none";
 		}
-		
 	}
 	
 	else if(id === "backend") {
-		for (let i = 0; i < 4; i++) {
+		for (var i=0; i <= 5; i++) {
 			frontend_projects[i].style.display = "none";
 			backend_projects[i].style.display = "block";
 		}
@@ -44,7 +44,7 @@ $('.skills_icon').tooltip()
  particlesJS("particles-js",{
   "particles": {
     "number": {
-      "value": 60,
+      "value": 40,
       "density": {
         "enable": true,
         "value_area": 800
@@ -61,11 +61,6 @@ $('.skills_icon').tooltip()
       },
       "polygon": {
         "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
       }
     },
     "opacity": {
@@ -151,5 +146,4 @@ $('.skills_icon').tooltip()
   },
   "retina_detect": true
 });
-
 

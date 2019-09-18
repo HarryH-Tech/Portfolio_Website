@@ -1,0 +1,376 @@
+/*Allows smooth scroll on navbar button click */
+html {
+  scroll-behavior: smooth;
+}
+
+/**** Define height of particle background in introduction section ****/
+#particles-js {
+	height: 84%;
+}
+
+
+hr {
+	display: inline-block;
+}
+
+
+
+/**** SASS Mixins ****/
+@mixin image_animation {
+	transition: all .2s ease-in-out;
+	&:hover {
+		transform: scale(1.1)
+	}
+}
+
+@mixin selected_project_button_styles_compatibility {
+	-moz-transition: all .7s ease-in;
+	-o-transition: all .7s ease-in;
+	-webkit-transition: all .7s ease-in;
+}
+
+
+/**** Navbar ****/
+.nav-link {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px 25px 0px 25px;
+}
+
+.navbar-nav {
+    margin: auto;
+	text-align: center;
+	
+	.navbar_li {
+		display:inline-block;
+		*display:inline; /*IE7*/
+		*zoom:1; /*IE7*/
+		margin-right:10px;
+	}
+}
+
+
+/**** Intro Section ****/
+
+#header {
+	background-color: #F1F5FF;
+	position: relative;
+	height: 900px;
+	
+	.container {
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+	#header_content {
+		color: black;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		text-align: center;
+		margin: auto;
+		
+
+	
+	}
+	
+	.fa {
+
+		margin: 52px 15px;
+	}
+	
+	#first_hr {
+		margin: 0px;
+	}
+
+	.arrow {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -20px;
+		width: 40px;
+		height: 28px;
+	}
+	
+	
+	
+	.blink {
+		animation: blinker 1.4s linear infinite;
+		font-size: 130%; 
+		font-weight: strong;
+	}
+	
+	.bounce {
+		-moz-animation: bounce 2s infinite;
+		-webkit-animation: bounce 2s infinite;
+		animation: bounce 2s infinite;
+	}
+}
+
+
+
+/**** About Me ****/
+#about_me { 
+	margin: auto;
+	.card {
+		margin: 40px;
+		text-align: center;
+		border-radius: 16px;
+	}
+	
+	.skills-image {
+		height: 60px;
+		width: 60px;
+		margin: 5px 5px 5px 5px;
+	}
+	
+	.about-me-intro {
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+
+
+	.card-body {
+		text-align: justify;
+		text-align-last: center;
+		border-radius: 16px;
+		background-color: #F2F4FF;
+	}
+
+
+
+}
+
+
+/**** My Projects ****/
+
+#my_projects {
+	.my-projects-title {
+		text-align: center;
+	}
+	
+	
+	.project-intro-text {
+		text-align: center;
+		font-size: 17px;
+		font-weight: bold;
+	}
+		
+	.flex-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	
+	.project-option-type {
+		@include selected_project_button_styles_compatibility;
+		margin: 10px;
+		text-align: center;
+		cursor: pointer;
+		background: white;
+		font-weight: bold;
+		font-size: 17px;
+		transition: all .7s ease-out;
+
+	}
+	
+	.selected-projects-button {
+		@include selected_project_button_styles_compatibility;
+		transition: all 0.7s ease-in;
+		background: #8EFFF7; 
+		border-radius: 5px;
+		cursor: pointer;
+		padding: 8px
+	}
+		
+			
+		
+	.card {
+		margin: 40px;
+		text-align: center;
+		border-radius: 16px;
+		min-height: 800px !important;
+	
+		.repo-live-site-options {
+			margin: 8px auto 4px auto;	
+		}
+		
+		.repo {
+			margin: 2px 50px auto auto;
+		}
+		
+		.project_text {
+			width: 85%;
+			margin: auto;
+			text-align: justify;
+			text-align-last: center;
+			font-size: 18px;
+		}
+		
+		.skills-icon {
+			@include image_animation;
+			padding: 5px;
+		}
+	}
+}
+
+
+/****Contact Me ****/
+#contact {
+	#contact_text {
+		font-weight: bold;
+	}
+	text-align: center;
+	font-size: 17px;
+
+	.contact-input {
+		border-radius: 18px;
+		margin: 5px;
+		background-color: #CCCCFF;
+		width: 90%;
+		padding: 10px;
+		&:focus {
+			outline: none;
+		}
+	}
+	
+
+	textarea {
+		height: 150px;
+		width: 90%;
+	}
+
+}
+	
+/**** Back to top button ****/
+#top_button_container {
+	text-align: center;
+	
+	#return_to_top {
+		font-size: 16px;
+	}
+}
+
+/**** Footer ****/
+
+footer {
+	background: 	#5bc0de;
+	padding: 10px 0;
+	text-align: center;
+
+	a {
+		color: white;
+		font-size: 50px;
+		padding: 20px;
+
+		&:hover {
+			color: black;;
+		}
+	}
+}
+
+
+/**** Media Queries ****/
+@media only screen and (max-width: 425px) {
+
+	
+	.skills-icon {
+		width: 10px;
+		height: 10px;
+	}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	.skills-icon {
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 2500px) {
+	.skills-icon {
+		height: 80px;
+		width: 80px;
+	}
+}
+
+
+
+
+/**** Animations ****/
+@keyframes blinker {
+	50% {
+		opacity: 0; 
+	} 
+}
+		
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
