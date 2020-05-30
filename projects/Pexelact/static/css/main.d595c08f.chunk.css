@@ -1,0 +1,2 @@
+.App{text-align:center;position:relative;min-height:100vh}.option-input{border-radius:12px;background-color:#8df;padding:5px}.option-input:focus{outline:0}.media-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:10px;justify-content:center;width:95%;margin:15px auto auto}@media only screen and (max-width:600px){.media-grid{grid-template-columns:repeat(1,1fr)}}@media only screen and (max-width:850px) and (min-width:600px){.media-grid{grid-template-columns:repeat(2,1fr)}}
+/*# sourceMappingURL=main.d595c08f.chunk.css.map */

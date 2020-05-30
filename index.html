@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Harry Harrison">
     <meta name="description" content="A portfolio of some of my work. It contains links to my Github and CV, some of my projects and a way to contact me.">
     <meta name="keywords" content="portfolio, web, developer, html, css, javascript, react">
+    <meta property="og:image"  content="PersonalWebsite.png" />
     <title>Portfolio</title>
     <link rel="icon" href="styles/images/icon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -50,9 +50,9 @@
                     <h2 class="display-5">Web Developer<span class="blink">_</span></h2>
 
                     <div class="icons">
-                        <a class="intro-link" target="blank" href="cv.pdf"><i class="fa fa-file fa-4x"></i></a>
-                        <a class="intro-link" target="blank" href="https://www.linkedin.com/in/harry-harrison/"><i class="fa fa-linkedin fa-4x"></i></a>
-                        <a class="intro-link" target="blank" href="https://github.com/HarryH1993GH"><i class="fa fa-github fa-4x"></i></a></div>
+                        <a class="intro-link" target="_blank" href="cv.pdf"><i class="fa fa-file fa-4x"></i></a>
+                        <a class="intro-link" target="_blank" href="https://www.linkedin.com/in/harry-harrison/"><i class="fa fa-linkedin fa-4x"></i></a>
+                        <a class="intro-link" target="_blank" href="https://github.com/HarryH-Tech"><i class="fa fa-github fa-4x"></i></a></div>
                 </div>
             </div>
         </div>
@@ -66,7 +66,10 @@
             <div class="card-body">
                 <h5 class="card-title">ABOUT ME</h5>
                 <div class="card-body about-me-intro">
-                    Hi, I'm Harry. I'm a web developer with 2 years of experience building and maintaining websites and web apps using a wide range of technologies, both front and backend. I love learning, especially about technology related topics and and am currently looking for my first professional opportunity within the industry.
+                    Hi, I'm Harry. I'm a web developer with 2 years of experience building and maintaining websites 
+                    and web apps using a wide range of technologies, both frontend and backend. I love learning, 
+                    especially about technology and I'm currently looking for my first professional 
+                    opportunity within the industry.
                 </div>
                 <hr>
                 <h4 class="card-title">My Main Skills</h4>
@@ -77,13 +80,13 @@
                             <img data-html="true" title="<b>CSS</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/css.png" alt="CSS icon" />
                             <img data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/js.png" alt="Javascript icon" />
                             <img data-html="true" title="<b>Bootstrap 4</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/bootstrap.png" alt="Bootstrap icon" />
+                            <img data-html="true" title="<b>Styled Components</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/styledcomponents.png" alt="Styled Components icon" />
+                            <img data-html="true" title="<b>Semantic UI React</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/semanticui.png" alt="Semantic UI React icon" />
                             <img data-html="true" title="<b>SASS</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/sass.png" alt="SASS icon" />
-                            <img data-html="true" title="<b>Materialize</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/materialize.png" alt="Materializecss icon" />
-                            <img data-html="true" title="<b>jQuery</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/jquery.png" alt="jQuery icon" />
                             <img data-html="true" title="<b>React</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/react.png" alt="React icon" />
-                            <img data-html="true" title="<b>PHP</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/php.png" alt="PHP icon" />
-                            <img data-html="true" title="<b>MySQL</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/mysql.png" alt="MySQL icon" />
-                            <img data-html="true" title="<b>Git</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/git.png" alt="Git icon" />
+                            <img data-html="true" title="<b>Node.js</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/node.png" alt="Node.js icon" />
+                            <img data-html="true" title="<b>MongoDB</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/mongo.png" alt="MongoDB icon" />
+                            <img data-html="true" title="<b>Git</b>" data-toggle="tooltip" class="skills-image img-fluid" src="styles/images/skills_icons/git.png" alt="Git icon" data-toggle="tooltip"/>
                         </div>
                     </div>
                 </div>
@@ -97,13 +100,14 @@
 			PROJECTS
 		</h3>
         <p class="project-intro-text">
-            Here you can see 6 of my side projects.</br>
+            Here you can see 5 of my side projects. To see the code for more of them head over to my 
+            <a href="https://github.com/HarryH-Tech" target="_blank">Github</a>.</br>
         </p>
         <section class="projects">
             <div class="flex-container">
                 <div onclick="selectActiveButtonAndShowCards(this.id)" id="all" class="all project-option-type">All</div>
-                <div onclick="selectActiveButtonAndShowCards(this.id)" id="frontend" class="frontend project-option-type">&lt;Frontend&gt;</div>
-                <div onclick="selectActiveButtonAndShowCards(this.id)" id="backend" class="backend project-option-type">&lt;?Backend?&gt;</div>
+                <div onclick="selectActiveButtonAndShowCards(this.id)" id="frontend" class="frontend project-option-type">Frontend</div>
+                <div onclick="selectActiveButtonAndShowCards(this.id)" id="backend" class="backend project-option-type">Backend</div>
             </div>
             <div class="all">
                 <div class="container">
@@ -111,28 +115,34 @@
                         <div class="col-md-6">
                             <div class="frontend_projects">
                                 <div class="card project_card hoverable">
-                                    <img class="card-img-top" src="styles/images/project_screenshots/crypto.png" alt="Cryptocurrency project screenshot" />
+                                    <img class="card-img-top" src="styles/images/project_screenshots/WebDevQuiz.png" alt="Web Development Quiz project screenshot" />
                                     <div class="repo-live-site-options">
-                                        <strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
-                                        <strong><a href="projects/Cryptocurrency_Image/index.html" target="_blank">LIVE SITE</a></strong>
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/Web_Development_Quiz" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a href="https://web-dev-quiz-b96c7.firebaseapp.com" target="_blank">LIVE SITE</a></strong>
                                     </div>
                                     <hr>
                                     <div class="card-title">
                                         <h3>
-										Cryptocurrency App
+										Web Development Quiz 
 									</h3>
                                     </div>
                                     <div class="card-text">
                                         <p class="project_text">
-                                            This app is based on one of the projects from Wes Bos's "30 Days of Javascript" course. It allows the user to alter the width and color of the image border and change the bluriness of the image. It also connects to 3 .txt files to obtain information about the currency the user clicked on and uses a jQuery plugin to make the image map responsive
+                                            This quiz requires the user to register/login and then answer 10 questions about 
+                                            web development they then receive a score when they finish the quiz.
+                                            It uses Firebase for the database and React and the Context API for the 
+                                            client side with Semantic-UI-React for the styling. Whilst building this app 
+                                            I learnt more about how to use a database to build  register/login functionality 
+                                            and how to use the Context API within React to avoid prop drilling.
                                         </p>
                                     </div>
                                     <hr>
                                     <div class="project_tech_icons_holder">
                                         <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/css.png" alt="CSS icon" />
                                         <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>jQuery</b>" data-toggle="tooltip" src="styles/images/skills_icons/jQuery.png" alt="jQuery icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Semantic UI React</b>" data-toggle="tooltip" src="styles/images/skills_icons/semanticui.png" alt="Semantic UI React icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Firebase</b>" data-toggle="tooltip" src="styles/images/skills_icons/firebase.png" alt="Firebase icon" />
                                     </div>
                                 </div>
                             </div>
@@ -144,25 +154,32 @@
                                         <img class="card-img-top" src="styles/images/project_screenshots/astronomize.png" alt="Astronomy app project screenshot" />
                                     </div>
                                     <div class="repo-live-site-options">
-                                        <strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/Astronomy_App" target="_blank">GITHUB REPO</a></strong>
                                         <strong><a href="projects/Astronomy_App/index.html" target="_blank">LIVE SITE</a></strong>
                                     </div>
                                     <hr>
                                     <div class="card-title">
                                         <h3>
-													Astronomy News and Search
-												</h3>
+										    Astronomy News and Search
+										</h3>
                                     </div>
                                     <div class="card-text">
                                         <p class="project_text">
-                                            This website was built using Vue and lets the user view the current and previous NASA Picures of the Day search the astronomy related topics using the <a href="https://api.nasa.gov/">NASA API </a>and also view the latest astronomy news using the
-                                            <a href="www.spaceflightnewsapi.net">Spaceflight News API</a>.
+                                            This website  lets the user view
+                                            the current and previous NASA Pictures of the Day and search 
+                                            for astronomy related topics using the 
+                                            <a href="https://api.nasa.gov/">NASA API</a>. They can also search for and view the latest astronomy news using the
+                                            <a target="blank" href="https://spaceflightnewsapi.net/">Spaceflight News API</a>.
+                                            I learnt more about using Vue and Vue Router whilst building this app as well as querying a 
+                                             REST API for data. I also learnt how to style a page and build an image slider using MaterializeCSS.
+
                                         </p>
                                     </div>
                                     <hr>
                                     <div class="project_tech_icons_holder">
                                         <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML icon" />
                                         <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/css.png" alt="CSS icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript icon" />
                                         <img class="skills-icon" data-html="true" title="<b>Materialize</b>" data-toggle="tooltip" src="styles/images/skills_icons/materialize.png" alt="Materialize icon" />
                                         <img class="skills-icon" data-html="true" title="<b>Vue</b>" data-toggle="tooltip" src="styles/images/skills_icons/vue.png" alt="Vue icon" />
                                     </div>
@@ -173,30 +190,34 @@
                             <div class="frontend_projects">
                                 <div class="card project_card hoverable">
                                     <div>
-                                        <img class="card-img-top" src="styles/images/project_screenshots/stock_information.png" alt="Tech Stocks and News project screenshot" />
+                                        <img class="card-img-top" src="styles/images/project_screenshots/Pexelact.png" alt="Pexelact project screenshot" />
                                     </div>
                                     <div class="repo-live-site-options">
-                                        <strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
-                                        <strong><a href="projects/Stock_Information/index.html" target="_blank">LIVE SITE</a></strong>
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/Pexelact" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a href="projects/Pexelact/index.html" target="_blank">LIVE SITE</a></strong>
                                     </div>
                                     <hr>
                                     <div class="card-title">
                                         <h3>
-													Technology Stocks and News
-												</h3>
+										    Pexelact
+										</h3>
                                     </div>
                                     <div class="card-text">
                                         <p class="project_text">
-                                            I built this website to allow me to view the latest business and technology news and also to give me an easy interface to be able to see the financial ratios of some technology companies. It uses Vue and axios to access the <a href="https://iextrading.com/developer/">IEX API</a> and iterate through an array of companies and then puts the information into a table, styled in Bootstrap.
-                                        </p>
+                                            This app uses the <a href="https://www.pexels.com/api/?locale=en-US" target="blank"> Pexels API</a> 
+                                            and React to allow the user to search photos, videos and view a random photo. I built it to learn more
+                                            about using hooks in React and the context API to control the data flow in the app as well as using React hooks.
+                                            I also learnt more about CSS grid and Styled Components as well as sending headers using 
+                                            the Javascript fetch method and querying REST APIs for data.
+                                        </p>                             
                                     </div>
                                     <hr>
                                     <div class="project_tech_icons_holder">
                                         <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML Icon" />
                                         <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/css.png" alt="CSS Icon" />
                                         <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>Bootstrap 4</b>" data-toggle="tooltip" src="styles/images/skills_icons/bootstrap.png" alt="Bootstrap Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>Vue</b>" data-toggle="tooltip" src="styles/images/skills_icons/vue.png" alt="Vue Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Styled Components</b>" data-toggle="tooltip" src="styles/images/skills_icons/styledcomponents.png" alt="Styled Components Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
                                     </div>
                                 </div>
                             </div>
@@ -205,30 +226,35 @@
                             <div class="frontend_projects">
                                 <div class="card project_card hoverable">
                                     <div>
-                                        <img class="card-img-top" src="styles/images/project_screenshots/movie_finder.png" alt="Web develeopmnent quiz project screenshot" />
+                                        <img class="card-img-top" src="styles/images/project_screenshots/COVID19.png" alt="COVID-19 project screenshot" />
                                     </div>
                                     <div class="repo-live-site-options">
-                                        <strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
-                                        <strong><a href="projects/Film_Search/index.html" target="_blank">LIVE SITE</a></strong>
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/COVID-19" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a href="projects/COVID_19/index.html" target="_blank">LIVE SITE</a></strong>
                                     </div>
                                     <hr>
                                     <div class="card-title">
                                         <h3>
-													Movie Finder
-												</h3>
+											COVID-19 Information
+										</h3>
                                     </div>
                                     <div class="card-text">
                                         <p class="project_text">
-                                            This app was partly based on a similar app I made in a <a href="https://www.udemy.com/modern-react-front-to-back/" target="blank">Udemy react course.</a> But I used a different API, changed the styling and added some new functionality. It allows the user to search for movies/series from the
-                                            <a href="http://www.omdbapi.com" target="blank">OMDB API,</a> then returns the movies in a grid and shows the cover image of the movie/series, the title and a button to allow the user to see more information about the movie/series.
+                                            This site was made with React and Redux and connects to an <a href="https://covid19api.com/" target="blank">API</a> 
+                                            to retrieve data about global and country specific 
+                                            COVID-19 cases and render the data to the browser using <a href="https://www.chartjs.org/" target="blank">chart.js</a>.
+                                            It also renders a map that shows the location of the country the user searched for.                                          
+                                            I learnt more about displaying data with chart.js as well as formatting the retrieved data to make it available
+                                            to use in a graph and google maps.
                                         </p>
                                     </div>
                                     <hr>
                                     <div class="project_tech_icons_holder">
                                         <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/css.png" alt="CSS Icon" />
                                         <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>React/b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Semantic UI React</b>" data-toggle="tooltip" src="styles/images/skills_icons/semanticui.png" alt="Semantic UI Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Chart.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/chartjs.svg" alt="Chart.js Icon" />
                                     </div>
                                 </div>
                             </div>
@@ -239,69 +265,49 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="backend_projects">
-                            <div class="card project_card hoverable">
-                                <div>
-                                    <img class="card-img-top" src="styles/images/project_screenshots/tesla_shop.png" alt="Tesla shop project screenshot" />
-                                </div>
-                                <div class="repo-live-site-options">
-                                    <strong><a class="repo" href="https://github.com/HarryH1993GH/Tesla_Shop" target="_blank">GITHUB REPO</a></strong>
-                                    <strong><a href="projects/Tesla_shop/login.php" target="_blank">LIVE SITE</a></strong>
-                                </div>
-                                <hr>
-                                <div class="card-title">
-                                    <h3>
-									Tesla Shop
-								</h3>
-                                </div>
-                                <div class="card-text">
-                                    <p class="project_text">
-                                        I used a PHP and MySQL database to allow the user to register, login, view the options available to buy and then purchase one. The input fields are validated for string length and password security upon registration and the user can change their details once logged in. I still need to add the functionality to automatically send an email upon the user buying a car and also create a "Forgot password" option on the login page.
-
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="project_tech_icons_holder">
-                                    <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/css.png" alt="CSS icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>Materialize</b>" data-toggle="tooltip" src="styles/images/skills_icons/materialize.png" alt="Materialize icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>PHP</b>" data-toggle="tooltip" src="styles/images/skills_icons/php.png" alt="PHP icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>MySQL</b>" data-toggle="tooltip" src="styles/images/skills_icons/mysql.png" alt="MySQL icon" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            
                     <div class="backend_projects">
                     </div>
-                    <div class="col-md-6">
+                     <div class="backend_projects">
+                    </div>
+                    <div class="col-md-6" style="margin: auto">
                         <div class="backend_projects">
                             <div class="card project_card hoverable">
                                 <div>
-                                    <img class="card-img-top" src="styles/images/project_screenshots/weather_app.png" alt="Travelling Photos gallery project screenshot" />
+                                    <img class="card-img-top" src="styles/images/project_screenshots/TFL.png" alt="Travelling Photos gallery project screenshot" />
                                 </div>
                                 <div class="repo-live-site-options">
-                                    <strong><a class="repo" href="#" target="_blank">GITHUB REPO</a></strong>
-                                    <strong><a href="projects/Weather_App/index.php" target="_blank">LIVE SITE</a></strong>
+                                    <strong><a class="repo" href="https://github.com/HarryH-Tech/TFL_Information" target="_blank">GITHUB REPO</a></strong>
+                                    <strong><a href="https://tfl-information.herokuapp.com/" target="_blank">LIVE SITE</a></strong>
                                 </div>
                                 <hr>
                                 <div class="card-title">
                                     <h3>
-										Weather App
+										Transport For London Information
 									</h3>
                                 </div>
                                 <div class="card-text">
                                     <p class="project_text">
-                                        This website uses PHP to access the <a href="https://openweathermap.org/api">Open Weather API</a> and allow the user to search for the weather in a specific location. It then prints this information to a Bootstrap card and shows an image depending on the maximum temperature on that day. It is styled in SASS.
+                                        This app allows the user to sign up, login and view 
+                                        pollution levels, plan a  journey to/from London and view 
+                                        nearby taxis within London. It uses Node.js for the login/sign 
+                                        up functionality and React on the front end to render the 
+                                        data to the user and connect to the <a href="https://api.tfl.gov.uk" target="_blank" >API</a> 
+                                        and Tailwind CSS for the styling. I learnt 
+                                        a lot building this app specifically more about using Node.js 
+                                        for login/signup and accessing a MongoDB database. I also learnt
+                                         about using redux thunk middleware for async/await operations 
+                                         and styling in Tailwind CSS.
                                     </p>
                                 </div>
                                 <hr>
                                 <div class="project_tech_icons_holder">
                                     <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/sass.png" alt="SASS icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>Bootstrap 4</b>" data-toggle="tooltip" src="styles/images/skills_icons/bootstrap.png" alt="Bootstrap icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>PHP</b>" data-toggle="tooltip" src="styles/images/skills_icons/php.png" alt="PHP icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>Tailwind CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/tailwindcss.png" alt="Tailwind CSS icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>Node.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/node.png" alt="Node.js icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>MongoDB</b>" data-toggle="tooltip" src="styles/images/skills_icons/mongo.png" alt="MongoDB icon" />
                                 </div>
                             </div>
                         </div>
@@ -315,7 +321,7 @@
             <div class="container">
                 <h3>GET IN TOUCH</h3>
                 <p id="contact_text">If you want to get in touch, you can email me <a href="mailto:h.harrison1993&#64;gmail.com">here</a> or contact me using the form below.
-                    <br> Thanks for taking the time to look at my portfolio and have a great day!
+                    <br> Thanks for taking the time to look at my portfolio and I hope you have a great day!
                     <br>&#128513;
 				</p>
 
@@ -343,9 +349,9 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container text-center">
-                <a target="blank" href="cv.pdf"><i class="fa fa-file"></i></a>
-                <a target="blank" href="https://www.linkedin.com/in/harry-harrison/"><i class="fa fa-linkedin"></i></a>
-                <a target="blank" href="https://github.com/HarryH1993GH"><i class="fa fa-github"></i></a>
+                <a target="_blank" href="cv.pdf"><i class="fa fa-file"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/harry-harrison/"><i class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/HarryH-Tech"><i class="fa fa-github"></i></a>
             </div>
         </footer>
         <script type="text/javascript" src="index.js">
