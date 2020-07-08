@@ -7,19 +7,14 @@
     <meta name="description" content="A portfolio of some of my work. It contains links to my Github and CV, some of my projects and a way to contact me.">
     <meta name="keywords" content="portfolio, web, developer, html, css, javascript, react">
     <meta property="og:image"  content="PersonalWebsite.png" />
-    <title>Portfolio</title>
     <link rel="icon" href="styles/images/icon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="styles/index.css" rel="stylesheet">
-    <script type="text/javascript" src="particles.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" defer src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
-</head>
+    <title>Portfolio</title>
+    </head>
 
 <body data-spy="scroll">
     <section id="header">
@@ -53,9 +48,9 @@
                         <a class="intro-link" target="_blank" href="cv.pdf"><i class="fa fa-file fa-4x"></i></a>
                         <a class="intro-link" target="_blank" href="https://www.linkedin.com/in/harry-harrison/"><i class="fa fa-linkedin fa-4x"></i></a>
                         <a class="intro-link" target="_blank" href="https://github.com/HarryH-Tech"><i class="fa fa-github fa-4x"></i></a></div>
+                    </div>
                 </div>
             </div>
-        </div>
         <div class="arrow bounce"><span style="color: black">&#x25BC;</span></div>
     </section>
     <hr id="first_hr">
@@ -107,7 +102,7 @@
             <div class="flex-container">
                 <div onclick="selectActiveButtonAndShowCards(this.id)" id="all" class="all project-option-type">All</div>
                 <div onclick="selectActiveButtonAndShowCards(this.id)" id="frontend" class="frontend project-option-type">Frontend</div>
-                <div onclick="selectActiveButtonAndShowCards(this.id)" id="backend" class="backend project-option-type">Backend</div>
+                <div onclick="selectActiveButtonAndShowCards(this.id)" id="backend" class="backend project-option-type">Full Stack</div>
             </div>
             <div class="all">
                 <div class="container">
@@ -131,7 +126,9 @@
                                             This quiz requires the user to register/login and then answer 10 questions about 
                                             web development they then receive a score when they finish the quiz.
                                             It uses Firebase for the database and React and the Context API for the 
-                                            client side with Semantic-UI-React for the styling. Whilst building this app 
+                                            client side with Semantic-UI-React for the styling. 
+                                            <hr />
+                                            Whilst building this app 
                                             I learnt more about how to use a database to build  register/login functionality 
                                             and how to use the Context API within React to avoid prop drilling.
                                         </p>
@@ -170,6 +167,7 @@
                                             for astronomy related topics using the 
                                             <a href="https://api.nasa.gov/">NASA API</a>. They can also search for and view the latest astronomy news using the
                                             <a target="blank" href="https://spaceflightnewsapi.net/">Spaceflight News API</a>.
+                                          <hr />
                                             I learnt more about using Vue and Vue Router whilst building this app as well as querying a 
                                              REST API for data. I also learnt how to style a page and build an image slider using MaterializeCSS.
 
@@ -187,28 +185,35 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="frontend_projects">
+                            <div class="backend_projects">
                                 <div class="card project_card hoverable">
                                     <div>
-                                        <img class="card-img-top" src="styles/images/project_screenshots/Pexelact.png" alt="Pexelact project screenshot" />
+                                        <img class="card-img-top" src="styles/images/project_screenshots/greek_god.png" alt="Pexelact project screenshot" />
                                     </div>
                                     <div class="repo-live-site-options">
-                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/Pexelact" target="_blank">GITHUB REPO</a></strong>
-                                        <strong><a href="projects/Pexelact/index.html" target="_blank">LIVE SITE</a></strong>
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/Greek_God_List" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a href="https://greek-god-crud.herokuapp.com/signup" target="_blank">LIVE SITE</a></strong>
                                     </div>
                                     <hr>
                                     <div class="card-title">
                                         <h3>
-										    Pexelact
+										    Greek God List
 										</h3>
                                     </div>
                                     <div class="card-text">
                                         <p class="project_text">
-                                            This app uses the <a href="https://www.pexels.com/api/?locale=en-US" target="blank"> Pexels API</a> 
-                                            and React to allow the user to search photos, videos and view a random photo. I built it to learn more
-                                            about using hooks in React and the context API to control the data flow in the app as well as using React hooks.
-                                            I also learnt more about CSS grid and Styled Components as well as sending headers using 
-                                            the Javascript fetch method and querying REST APIs for data.
+                                     
+                                            This app was deployed using Heroku and uses React, Axios and 
+                                            Material UI React on the front end with Node.js and 
+                                            MongoDB on the backend. The user can register/login and view information 
+                                            about each god however only an admin can add, update or delete gods from the database.
+                                        <hr />
+                                            Building this app taught me how to implement basic CRUD functionality using Node 
+                                            and MongDB as well as how to create different sections on an app for users and administrators. 
+
+
+
+                                        
                                         </p>                             
                                     </div>
                                     <hr>
@@ -216,45 +221,53 @@
                                         <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML Icon" />
                                         <img class="skills-icon" data-html="true" title="<b>CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/css.png" alt="CSS Icon" />
                                         <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>Styled Components</b>" data-toggle="tooltip" src="styles/images/skills_icons/styledcomponents.png" alt="Styled Components Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Material UI React</b>" data-toggle="tooltip" src="styles/images/skills_icons/material-ui-react.png" alt="Material UI React Icon" />
                                         <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Node.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/node.png" alt="Node.js Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Mongo DB</b>" data-toggle="tooltip" src="styles/images/skills_icons/mongo.png" alt="Mongo DB Icon" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="frontend_projects">
+                        <div class="col-md-6" >
+                            <div class="backend_projects">
                                 <div class="card project_card hoverable">
                                     <div>
-                                        <img class="card-img-top" src="styles/images/project_screenshots/COVID19.png" alt="COVID-19 project screenshot" />
+                                        <img class="card-img-top" src="styles/images/project_screenshots/TFL.png" alt="Travelling Photos gallery project screenshot" />
                                     </div>
                                     <div class="repo-live-site-options">
-                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/COVID-19" target="_blank">GITHUB REPO</a></strong>
-                                        <strong><a href="projects/COVID_19/index.html" target="_blank">LIVE SITE</a></strong>
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/TFL_Information" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a href="https://tfl-information.herokuapp.com/" target="_blank">LIVE SITE</a></strong>
                                     </div>
                                     <hr>
                                     <div class="card-title">
                                         <h3>
-											COVID-19 Information
-										</h3>
+                                            Transport For London Information
+                                        </h3>
                                     </div>
                                     <div class="card-text">
                                         <p class="project_text">
-                                            This site was made with React and Redux and connects to an <a href="https://covid19api.com/" target="blank">API</a> 
-                                            to retrieve data about global and country specific 
-                                            COVID-19 cases and render the data to the browser using <a href="https://www.chartjs.org/" target="blank">chart.js</a>.
-                                            It also renders a map that shows the location of the country the user searched for.                                          
-                                            I learnt more about displaying data with chart.js as well as formatting the retrieved data to make it available
-                                            to use in a graph and google maps.
+                                            This app was deployed using Heroku and allows the user to sign up, login and view 
+                                            pollution levels, plan a  journey to/from London and view 
+                                            nearby taxis within London. It uses Node.js for the login/sign 
+                                            up functionality and React on the front end to render the 
+                                            data to the user and connect to the <a href="https://api.tfl.gov.uk" target="_blank" >API</a> 
+                                            and Tailwind CSS for the styling. 
+                                            <hr />
+                                            I learnt a lot building this app specifically more about using Node.js 
+                                            for login/signup and accessing a MongoDB database. I also learnt
+                                             about using redux thunk middleware for async/await operations 
+                                             and styling in Tailwind CSS.
                                         </p>
                                     </div>
                                     <hr>
                                     <div class="project_tech_icons_holder">
-                                        <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>Semantic UI React</b>" data-toggle="tooltip" src="styles/images/skills_icons/semanticui.png" alt="Semantic UI Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
-                                        <img class="skills-icon" data-html="true" title="<b>Chart.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/chartjs.svg" alt="Chart.js Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Tailwind CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/tailwindcss.png" alt="Tailwind CSS icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Node.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/node.png" alt="Node.js icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>MongoDB</b>" data-toggle="tooltip" src="styles/images/skills_icons/mongo.png" alt="MongoDB icon" />
                                     </div>
                                 </div>
                             </div>
@@ -265,50 +278,82 @@
 
             <div class="container">
                 <div class="row">
-            
-                    <div class="backend_projects">
-                    </div>
-                     <div class="backend_projects">
-                    </div>
-                    <div class="col-md-6" style="margin: auto">
-                        <div class="backend_projects">
+                    
+                    <div class="col-md-6" id="covid-column" style="margin: auto">
+                        <div class="frontend_projects">
                             <div class="card project_card hoverable">
                                 <div>
-                                    <img class="card-img-top" src="styles/images/project_screenshots/TFL.png" alt="Travelling Photos gallery project screenshot" />
+                                    <img class="card-img-top" src="styles/images/project_screenshots/COVID19.png" alt="COVID-19 project screenshot" />
                                 </div>
                                 <div class="repo-live-site-options">
-                                    <strong><a class="repo" href="https://github.com/HarryH-Tech/TFL_Information" target="_blank">GITHUB REPO</a></strong>
-                                    <strong><a href="https://tfl-information.herokuapp.com/" target="_blank">LIVE SITE</a></strong>
+                                    <strong><a class="repo" href="https://github.com/HarryH-Tech/COVID-19" target="_blank">GITHUB REPO</a></strong>
+                                    <strong><a href="projects/COVID_19/index.html" target="_blank">LIVE SITE</a></strong>
                                 </div>
                                 <hr>
                                 <div class="card-title">
                                     <h3>
-										Transport For London Information
-									</h3>
+                                        COVID-19 Information
+                                    </h3>
                                 </div>
                                 <div class="card-text">
                                     <p class="project_text">
-                                        This app allows the user to sign up, login and view 
-                                        pollution levels, plan a  journey to/from London and view 
-                                        nearby taxis within London. It uses Node.js for the login/sign 
-                                        up functionality and React on the front end to render the 
-                                        data to the user and connect to the <a href="https://api.tfl.gov.uk" target="_blank" >API</a> 
-                                        and Tailwind CSS for the styling. I learnt 
-                                        a lot building this app specifically more about using Node.js 
-                                        for login/signup and accessing a MongoDB database. I also learnt
-                                         about using redux thunk middleware for async/await operations 
-                                         and styling in Tailwind CSS.
+                                        This site was made with React and Redux and connects to an <a href="https://covid19api.com/" target="blank">API</a> 
+                                        to retrieve data about global and country specific 
+                                        COVID-19 cases and render the data to the browser using <a href="https://www.chartjs.org/" target="blank">chart.js</a>.
+                                        It also renders a map that shows the location of the country the user searched for.                                          
+                                       <hr/>
+                                        I learnt more about displaying data with chart.js as well as formatting the retrieved data to make it available
+                                        to use in a graph and google maps.
                                     </p>
                                 </div>
                                 <hr>
                                 <div class="project_tech_icons_holder">
-                                    <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>Tailwind CSS</b>" data-toggle="tooltip" src="styles/images/skills_icons/tailwindcss.png" alt="Tailwind CSS icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>Node.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/node.png" alt="Node.js icon" />
-                                    <img class="skills-icon" data-html="true" title="<b>MongoDB</b>" data-toggle="tooltip" src="styles/images/skills_icons/mongo.png" alt="MongoDB icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML Icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript Icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>Semantic UI React</b>" data-toggle="tooltip" src="styles/images/skills_icons/semanticui.png" alt="Semantic UI Icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
+                                    <img class="skills-icon" data-html="true" title="<b>Chart.js</b>" data-toggle="tooltip" src="styles/images/skills_icons/chartjs.svg" alt="Chart.js Icon" />
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-md-6"  id="aws-column" style="margin: auto">
+                            <div class="backend_projects">
+                                <div class="card project_card hoverable">
+                                    <div>
+                                        <img class="card-img-top" src="styles/images/project_screenshots/AWS.png" alt="AWS-Anagrams project screenshot" />
+                                    </div>
+                                    <div class="repo-live-site-options">
+                                        <strong><a class="repo" href="https://github.com/HarryH-Tech/AWS_anagrams" target="_blank">GITHUB REPO</a></strong>
+                                        <strong><a href="projects/AWS_Anagrams/index.html" target="_blank">LIVE SITE</a></strong>
+                                    </div>
+                                    <hr>
+                                    <div class="card-title">
+                                        <h3>
+                                           AWS Anagrams
+                                        </h3>
+                                    </div>
+                                    <div class="card-text">
+                                        <p class="project_text">
+                                            This site was made with React and Redux and connects to an <a href="https://covid19api.com/" target="blank">API</a> 
+                                            to retrieve data about global and country specific 
+                                            COVID-19 cases and render the data to the browser using <a href="https://www.chartjs.org/" target="blank">chart.js</a>.
+                                            It also renders a map that shows the location of the country the user searched for.                                          
+                                           <hr/>
+                                            I learnt more about displaying data with chart.js as well as formatting the retrieved data to make it available
+                                            to use in a graph and google maps.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="project_tech_icons_holder">
+                                        <img class="skills-icon" data-html="true" title="<b>HTML</b>" data-toggle="tooltip" src="styles/images/skills_icons/html.png" alt="HTML Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Javascript</b>" data-toggle="tooltip" src="styles/images/skills_icons/js.png" alt="Javascript Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Semantic UI React</b>" data-toggle="tooltip" src="styles/images/skills_icons/sass.png" alt="SASS Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>React</b>" data-toggle="tooltip" src="styles/images/skills_icons/react.png" alt="React Icon" />
+                                        <img class="skills-icon" data-html="true" title="<b>Amazon Web Services</b>" data-toggle="tooltip" src="styles/images/skills_icons/AWS.png" alt="AWS Icon" />
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -354,7 +399,11 @@
                 <a target="_blank" href="https://github.com/HarryH-Tech"><i class="fa fa-github"></i></a>
             </div>
         </footer>
-        <script type="text/javascript" src="index.js">
-        </script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" defer src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

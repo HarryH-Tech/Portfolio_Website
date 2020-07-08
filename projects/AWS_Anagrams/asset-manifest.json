@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projects/AWS_Anagrams/static/css/main.5ee80511.chunk.css",
+    "main.js": "/projects/AWS_Anagrams/static/js/main.060600ca.chunk.js",
+    "main.js.map": "/projects/AWS_Anagrams/static/js/main.060600ca.chunk.js.map",
+    "runtime-main.js": "/projects/AWS_Anagrams/static/js/runtime-main.4270c774.js",
+    "runtime-main.js.map": "/projects/AWS_Anagrams/static/js/runtime-main.4270c774.js.map",
+    "static/js/2.c584a2c2.chunk.js": "/projects/AWS_Anagrams/static/js/2.c584a2c2.chunk.js",
+    "static/js/2.c584a2c2.chunk.js.map": "/projects/AWS_Anagrams/static/js/2.c584a2c2.chunk.js.map",
+    "index.html": "/projects/AWS_Anagrams/index.html",
+    "precache-manifest.99c92040a9d6c550b30ece8a136fc2d9.js": "/projects/AWS_Anagrams/precache-manifest.99c92040a9d6c550b30ece8a136fc2d9.js",
+    "service-worker.js": "/projects/AWS_Anagrams/service-worker.js",
+    "static/css/main.5ee80511.chunk.css.map": "/projects/AWS_Anagrams/static/css/main.5ee80511.chunk.css.map",
+    "static/js/2.c584a2c2.chunk.js.LICENSE.txt": "/projects/AWS_Anagrams/static/js/2.c584a2c2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4270c774.js",
+    "static/js/2.c584a2c2.chunk.js",
+    "static/css/main.5ee80511.chunk.css",
+    "static/js/main.060600ca.chunk.js"
+  ]
+}

@@ -20,15 +20,20 @@ function selectActiveButtonAndShowCards(id) {
       backend_projects[i].style.display = "block";
     }
   } else if (id === "frontend") {
-    console.log(backend_projects);
-    for (var i = 0; i <= 3; i++) {
+    document.getElementById("aws-column").style.display = "none";
+    document.getElementById("covid-column").style.display = "block";
+    for (var i = 0; i <= 2; i++) {
       frontend_projects[i].style.display = "block";
-      backend_projects[2].style.display = "none";
+      backend_projects[i].style.display = "none";
     }
   } else if (id === "backend") {
-    for (var i = 0; i <= 3; i++) {
+    document.getElementById("aws-column").style.display = "block";
+    document.getElementById("covid-column").style.display = "none";
+
+    for (var i = 0; i <= 2; i++) {
       frontend_projects[i].style.display = "none";
-      backend_projects[0].style.display = "block";
+
+      backend_projects[i].style.display = "block";
     }
   }
 }

@@ -122,6 +122,10 @@ hr {
 
 /**** My Projects ****/
 
+#my_projects {
+  text-align: center;
+}
+
 #my_projects .my-projects-title {
   text-align: center;
 }
@@ -164,6 +168,7 @@ hr {
 }
 #my_projects .card .repo-live-site-options {
   margin: 8px auto 4px auto;
+  font-size: 0.9rem;
 }
 #my_projects .card .repo {
   margin: 2px 50px auto auto;
