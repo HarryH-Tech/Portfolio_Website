@@ -14,21 +14,26 @@ function selectActiveButtonAndShowCards(id) {
 
   let backend_projects = document.querySelectorAll(".backend_projects");
   let frontend_projects = document.querySelectorAll(".frontend_projects");
+
+  let awsColumn = document.getElementById("aws-column");
+  let covidColumn = document.getElementById("covid-column");
   if (id === "all") {
+    awsColumn.style.display = "block";
+    covidColumn.style.display = "block";
     for (var i = 0; i < 3; i++) {
       frontend_projects[i].style.display = "block";
       backend_projects[i].style.display = "block";
     }
   } else if (id === "frontend") {
-    document.getElementById("aws-column").style.display = "none";
-    document.getElementById("covid-column").style.display = "block";
+    awsColumn.style.display = "none";
+    covidColumn.style.display = "block";
     for (var i = 0; i <= 2; i++) {
       frontend_projects[i].style.display = "block";
       backend_projects[i].style.display = "none";
     }
   } else if (id === "backend") {
-    document.getElementById("aws-column").style.display = "block";
-    document.getElementById("covid-column").style.display = "none";
+    awsColumn.style.display = "block";
+    covidColumn.style.display = "none";
 
     for (var i = 0; i <= 2; i++) {
       frontend_projects[i].style.display = "none";
